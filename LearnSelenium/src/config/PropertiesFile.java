@@ -10,6 +10,7 @@ import SeleniumTests.FirstSeleniumTest;
 
 public class PropertiesFile {
 	static Properties prop = new Properties();
+	static String projectLocation = System.getProperty("user.dir");
 	
 	public static void main(String[] args) {
 		readPropertiesFile();
@@ -20,7 +21,7 @@ public class PropertiesFile {
 	public static void readPropertiesFile() {
 		try {
 
-			InputStream input = new FileInputStream("/Users/Muppaneni/JavaProjects/git/TestProjects/LearnSelenium/src/config/config.properties");
+			InputStream input = new FileInputStream(projectLocation + "/src/config/config.properties");
 			prop.load(input);
 			FirstSeleniumTest.browser = prop.getProperty("browser");
 			System.out.println(FirstSeleniumTest.browser);
@@ -34,7 +35,7 @@ public class PropertiesFile {
 	public static void writePropertiesFile() {
 		try {
 			
-			OutputStream output = new FileOutputStream("/Users/Muppaneni/JavaProjects/git/TestProjects/LearnSelenium/src/config/config.properties");
+			OutputStream output = new FileOutputStream(projectLocation + "/src/config/config.properties");
 			prop.setProperty("result", "pass");
 			prop.store(output, null);
 		
