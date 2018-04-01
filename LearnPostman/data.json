@@ -1,0 +1,12 @@
+[  
+   {  
+      "endpoint":"api/register",
+      "email":"sydney@fife",
+      "password":"pistol"
+   },
+   {  
+      "endpoint":"api/register",
+      "email":"abc@fife",
+      "password":"temp"
+   }
+]
