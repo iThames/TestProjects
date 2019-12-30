@@ -73,6 +73,7 @@
 						"repos"
 					]
 				}
+                "description": "create new github repository"
 			},
 			"response": []
 		},
