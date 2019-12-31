@@ -244,7 +244,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "07689ef7fee166598b29830e5395f6c01fb6509d",
+				"value": {{token}},
 				"type": "string"
 			}
 		]
