@@ -8,7 +8,7 @@ describe('My First Test Suite', () => {
             //move to sibling and get the text
             cy.get('[name="courses"] tr td:nth-child(2)').eq(index).next().then(($price_el) => {
                 const price =$price_el.text()
-                expect(price).to.equal('25')
+                expect(price).to.equal('26')
             }) 
           }
         })
