@@ -16,6 +16,7 @@ jobs:
       - name: Change to CypressAutomation directory
         run: |
           cd CypressAutomation
+          pwd
       - name: Cypress run
         # Uses the official Cypress GitHub action https://github.com/cypress-io/github-action
         uses: cypress-io/github-action@v6
